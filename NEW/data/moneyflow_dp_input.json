@@ -1,0 +1,223 @@
+{
+  "initial_cash": 0.0,
+  "reserve_min": 0,
+  "grid_step": 10,
+  "horizon_months": 1,
+  "cashflows": [
+    {
+      "month": 1,
+      "day": 1,
+      "amount": 3500.0,
+      "label": "Salary Deposit"
+    },
+    {
+      "month": 1,
+      "day": 2,
+      "amount": -85.5,
+      "label": "Tesco Supermarket"
+    },
+    {
+      "month": 1,
+      "day": 3,
+      "amount": -4.5,
+      "label": "Starbucks Coffee"
+    },
+    {
+      "month": 1,
+      "day": 4,
+      "amount": -12.3,
+      "label": "Uber Ride"
+    },
+    {
+      "month": 1,
+      "day": 5,
+      "amount": -45.99,
+      "label": "Amazon Purchase"
+    },
+    {
+      "month": 1,
+      "day": 6,
+      "amount": -15.99,
+      "label": "Netflix Subscription"
+    },
+    {
+      "month": 1,
+      "day": 7,
+      "amount": -67.2,
+      "label": "Sainsbury's Grocery"
+    },
+    {
+      "month": 1,
+      "day": 8,
+      "amount": -55.0,
+      "label": "Shell Petrol Station"
+    },
+    {
+      "month": 1,
+      "day": 9,
+      "amount": -28.5,
+      "label": "Pizza Express"
+    },
+    {
+      "month": 1,
+      "day": 10,
+      "amount": -45.0,
+      "label": "Gym Membership"
+    },
+    {
+      "month": 1,
+      "day": 11,
+      "amount": -89.0,
+      "label": "Electricity Bill"
+    },
+    {
+      "month": 1,
+      "day": 12,
+      "amount": -72.3,
+      "label": "Asda Supermarket"
+    },
+    {
+      "month": 1,
+      "day": 13,
+      "amount": -3.8,
+      "label": "Costa Coffee"
+    },
+    {
+      "month": 1,
+      "day": 14,
+      "amount": -15.6,
+      "label": "TFL Transport"
+    },
+    {
+      "month": 1,
+      "day": 15,
+      "amount": -9.99,
+      "label": "Spotify Subscription"
+    },
+    {
+      "month": 1,
+      "day": 16,
+      "amount": -89.99,
+      "label": "Zara Shopping"
+    },
+    {
+      "month": 1,
+      "day": 17,
+      "amount": -45.8,
+      "label": "Waitrose Grocery"
+    },
+    {
+      "month": 1,
+      "day": 18,
+      "amount": -8.99,
+      "label": "McDonald's"
+    },
+    {
+      "month": 1,
+      "day": 19,
+      "amount": -7.99,
+      "label": "Amazon Prime"
+    },
+    {
+      "month": 1,
+      "day": 20,
+      "amount": -23.5,
+      "label": "Boots Pharmacy"
+    },
+    {
+      "month": 1,
+      "day": 21,
+      "amount": -58.4,
+      "label": "Morrison's Supermarket"
+    },
+    {
+      "month": 1,
+      "day": 22,
+      "amount": -18.5,
+      "label": "Uber Eats"
+    },
+    {
+      "month": 1,
+      "day": 23,
+      "amount": -65.0,
+      "label": "H&M Shopping"
+    },
+    {
+      "month": 1,
+      "day": 24,
+      "amount": -125.8,
+      "label": "Tesco Supermarket"
+    },
+    {
+      "month": 1,
+      "day": 25,
+      "amount": -85.0,
+      "label": "Restaurant Bill"
+    },
+    {
+      "month": 1,
+      "day": 26,
+      "amount": -35.0,
+      "label": "Internet Bill"
+    },
+    {
+      "month": 1,
+      "day": 27,
+      "amount": -52.0,
+      "label": "Shell Petrol Station"
+    },
+    {
+      "month": 1,
+      "day": 28,
+      "amount": 850.0,
+      "label": "Freelance Payment"
+    },
+    {
+      "month": 1,
+      "day": 29,
+      "amount": -48.9,
+      "label": "Sainsbury's Grocery"
+    },
+    {
+      "month": 1,
+      "day": 30,
+      "amount": -4.2,
+      "label": "Coffee Shop"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "statement_only",
+      "probability": 0.8,
+      "events": []
+    },
+    {
+      "name": "assumed_extra_expense",
+      "probability": 0.2,
+      "events": [
+        {
+          "month": 1,
+          "day": 18,
+          "amount": -500,
+          "label": "assumed unexpected expense"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "name": "assumed_emergency_goal",
+      "target": 1500,
+      "due_month": 1,
+      "utility_half": 25,
+      "utility_full": 60
+    },
+    {
+      "name": "assumed_course_goal",
+      "target": 1000,
+      "due_month": 1,
+      "utility_half": 15,
+      "utility_full": 40
+    }
+  ]
+}
